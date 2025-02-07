@@ -139,11 +139,12 @@ body {
 .sidebar-footer .email-button  {
     display: block;
     text-align: center;
+    justify-content: center;
     padding: 10px 20px;
     margin-top: 10px;
     margin-bottom: 50px;
     font-size: 1.2em;
-    color: #fff;
+    color: #f4ecf7;
     background-color: #5b2c6f;
     border: none;
     border-radius: 8px;
@@ -228,6 +229,15 @@ main {
     margin-bottom: 15px;
 }
 
+
+.icon {
+    width: 30px; /* Adjust size as needed */
+    height: auto;
+    vertical-align: middle; /* Aligns images with text */
+    margin: 0 10px; /* Adds spacing between images and text */
+}
+
+
 /* Paragraph Styling */
 .content-section p {
     font-size: 1em;
@@ -282,7 +292,7 @@ main {
 }
 
 /* Job Entry Styling */
-.job-entry {
+.job {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -298,15 +308,30 @@ main {
 
 /* Job Entry Header */
 .job-entry-header {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
+
+
+
+
+
+
 
 /* Job Title Styling */
 .job-entry-header h3 {
     font-size: 1.2em;
     color: #5b2c6f;
     margin: 0;
+    Padding-top: 20px;
+    border-top: 2px solid #d2b4de;
+    padding-left: 20px;
+    padding-right: 20px;
 }
+
+#job .job-entry-header:first-of-type h3 {
+    border-top: none !important;
+}
+
 
 /* Client Name and Duration Container */
 .job-details {
@@ -316,7 +341,9 @@ main {
     font-size: 1em;
     color: #5b2c6f;
     padding-bottom: 10px;
-    border-bottom: 2px solid #d2b4de;
+    padding-left: 20px;
+    padding-right: 20px;
+    
 }
 
 /* Client Name Styling */
@@ -341,7 +368,7 @@ main {
     background-color: #f4ecf7;
     border: 2px solid #d2b4de;
     border-radius: 15px;
-    margin-bottom: 15px
+    margin-bottom: 15px;
 }
 
 /* education Title Header */
@@ -458,9 +485,10 @@ main {
 .contact-form button {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 50%;
     margin: 0 auto; 
-    padding: 10px 50px;
+    padding: 10px;
     font-size: 1.2em;
     background-color: #5b2c6f;
     color: #f4ecf7;
